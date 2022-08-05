@@ -1,0 +1,66 @@
+{
+    "time": 5,
+    "tasks":
+    [
+        {
+            "strategy":
+            {
+                "type": "periodic",
+                "priority": 0,
+                "frequency": 100
+            },
+            "client":
+            {
+                "name": "my_name_is_D"
+            }
+        },
+        {
+            "strategy":
+            {
+                "type": "periodic",
+                "priority": 0,
+                "frequency": 100
+            },
+            "client":
+            {
+                "name": "my_name_is_I"
+            }
+        },
+        {
+            "strategy":
+            {
+                "type": "trace",
+                "trace":
+                [
+                    25,
+                    49,
+                    84,
+                    106,
+                    283,
+                    594,
+                    732,
+                    1034,
+                    1593,
+                    2633,
+                    4521
+                ]
+            },
+            "client":
+            {
+                "name": "my_name_is_S"
+            }
+        },
+        {
+            "strategy":
+            {
+                "type": "periodic",
+                "priority": 1,
+                "frequency": 1000
+            },
+            "client":
+            {
+                "name": "my_name_is_B"
+            }
+        }
+    ]
+}

@@ -1,0 +1,84 @@
+{
+    "time": 1,
+    "tasks":
+    [
+        {
+            "strategy":
+            {
+                "type": "periodic",
+                "priority": 0,
+                "frequency": 100
+            },
+            "client":
+            {
+                "model_name": "vgg",
+                "priority": 0
+            }
+        },       
+        {
+            "strategy":
+            {
+                "type": "periodic",
+                "priority": 1,
+                "frequency": 100
+            },
+            "client":
+            {
+                "model_name": "densenet",
+                "priority": 1
+            }
+        },
+        {
+            "strategy":
+            {
+                "type": "periodic",
+                "priority": 1,
+                "frequency": 100
+            },
+            "client":
+            {
+                "model_name": "inception",
+                "priority": 1
+            }
+        },
+        {
+            "strategy":
+            {
+                "type": "periodic",
+                "priority": 1,
+                "frequency": 100
+            },
+            "client":
+            {
+                "model_name": "vgg",
+                "priority": 1
+            }
+        },
+        {
+            "strategy":
+            {
+                "type": "periodic",
+                "priority": 1,
+                "frequency": 100
+            },
+            "client":
+            {
+                "model_name": "bert",
+                "priority": 1
+            }
+        },
+        {
+            "strategy":
+            {
+                "type": "periodic",
+                "priority": 1,
+                "frequency": 100
+            },
+            "client":
+            {
+                "model_name": "resnet152",
+                "priority": 1
+            }
+        }
+    ]
+}
