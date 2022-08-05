@@ -1,0 +1,36 @@
+{
+    "time": 1,
+    "tasks":
+    [
+        {
+            "strategy":
+            {
+                "type": "periodic",
+                "priority": 0,
+                "frequency": 100
+            },
+            "client":
+            {
+                "name": "rt",
+                "assets_dir": "../samples/tfserving/assets",
+                "grpc_addr": "localhost:8500",
+                "model_name": "resnet"
+            }
+        },
+        {
+            "strategy":
+            {
+                "type": "periodic",
+                "priority": 1,
+                "frequency": 100
+            },
+            "client":
+            {
+                "name": "be",
+                "assets_dir": "../samples/tfserving/assets",
+                "grpc_addr": "localhost:8500",
+                "model_name": "resnet"
+            }
+        }
+    ]
+}

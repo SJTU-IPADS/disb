@@ -1,0 +1,3 @@
+[submodule "samples/reef/reef"]
+	path = samples/reef/reef
+	url = https://github.com/SJTU-IPADS/reef.git

@@ -1,0 +1,32 @@
+{
+    "time": 1,
+    "tasks":
+    [
+        {
+            "strategy":
+            {
+                "type": "periodic",
+                "priority": 0,
+                "frequency": 220
+            },
+            "client":
+            {
+                "model_name": "vgg",
+                "priority": 0
+            }
+        },       
+        {
+            "strategy":
+            {
+                "type": "periodic",
+                "priority": 1,
+                "frequency": 220
+            },
+            "client":
+            {
+                "model_name": "resnet152",
+                "priority": 1
+            }
+        }
+    ]
+}
