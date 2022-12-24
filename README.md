@@ -4,21 +4,28 @@ DISB is a DNN inference serving benchmark with diverse workloads and models. It 
 
 DISB uses the client-server architecture, where the clients send the DNN inference requests to the server via RPC, and the server returns the inference result. Clients can submit the inference requests periodically or randomly. An inference request should contain the model name (or id), the input data and other customized attributes (e.g., priority or deadline). 
 
+
+
 ## Table of Contents
 
 - [DISB Toolkit](#disb-toolkit)
 - [DISB Workloads](#disb-workloads)
-- [Paper](#paper)
 - [Build & Install](#build--install)
 - [Usage](#usage)
 - [Samples](#samples)
 - [Benchmark Result](#benchmark-result)
+- [Paper](#paper)
+- [The Team](#the-team)
 - [Contact Us](#contact-us)
+- [License](#license)
+
 
 
 ## DISB Toolkit
 
 DISB provides a C++ library (`libdisb`) to perform benchmarking. To integrate your own DNN inference system with DISB, you only need to implement a `DISBClient` to wrap your inference interface. See [usage](#usage) for details.
+
+
 
 ## DISB Workloads
 
@@ -31,26 +38,9 @@ There are three pattern for submitting inference requests in DISB clients:
 
 See [workloads](./workloads.md) for workload details.
 
-[TBD] We're still working on providing more representative and general DNN inference serving workloads.
+[TBD] We're still working on providing more representative and general DNN inference serving workloads. We will support dependent load (inference DAG) in next release.
 
 
-## Paper
-
-If you use DISB in your research, please cite our paper:
-```bibtex
-@inproceedings {osdi2022reef,
-  author = {Mingcong Han and Hanze Zhang and Rong Chen and Haibo Chen},
-  title = {Microsecond-scale Preemption for Concurrent {GPU-accelerated} {DNN} Inferences},
-  booktitle = {16th USENIX Symposium on Operating Systems Design and Implementation (OSDI 22)},
-  year = {2022},
-  isbn = {978-1-939133-28-1},
-  address = {Carlsbad, CA},
-  pages = {539--558},
-  url = {https://www.usenix.org/conference/osdi22/presentation/han},
-  publisher = {USENIX Association},
-  month = jul,
-}
-```
 
 ## Build & Install
 
@@ -203,6 +193,8 @@ sudo make install
   }
   ```
 
+
+
 ## Samples
 
 - [HelloDISB](samples/hellodisb)
@@ -224,7 +216,34 @@ sudo make install
 
 ## Benchmark Result
 
-[TBD] We will provide the benchmark result of common DNN inference framework on DISB.
+[TBD] We will provide the benchmark result of common DNN inference framework on DISB in next release.
+
+
+
+## Paper
+
+If you use DISB in your research, please cite our paper:
+```bibtex
+@inproceedings {osdi2022reef,
+  author = {Mingcong Han and Hanze Zhang and Rong Chen and Haibo Chen},
+  title = {Microsecond-scale Preemption for Concurrent {GPU-accelerated} {DNN} Inferences},
+  booktitle = {16th USENIX Symposium on Operating Systems Design and Implementation (OSDI 22)},
+  year = {2022},
+  isbn = {978-1-939133-28-1},
+  address = {Carlsbad, CA},
+  pages = {539--558},
+  url = {https://www.usenix.org/conference/osdi22/presentation/han},
+  publisher = {USENIX Association},
+  month = jul,
+}
+```
+
+
+
+## The Team
+
+REEF is developed and maintained by members from [IPADS@SJTU](https://github.com/SJTU-IPADS) and Shanghai AI Laboratory. See [Contributors](CONTRIBUTORS.md).
+
 
 
 ## Contact Us
@@ -232,3 +251,13 @@ sudo make install
 If you have any questions about DISB, feel free to contact us.
 
 Weihang Shen: shenwhang@sjtu.edu.cn
+
+Mingcong Han: mingconghan@sjtu.edu.cn
+
+Rong Chen: rongchen@sjtu.edu.cn
+
+
+
+## License
+
+REEF is released under the [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0.html).
