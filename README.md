@@ -242,7 +242,7 @@ If you use DISB in your research, please cite our paper:
 
 ## The Team
 
-REEF is developed and maintained by members from [IPADS@SJTU](https://github.com/SJTU-IPADS) and Shanghai AI Laboratory. See [Contributors](CONTRIBUTORS.md).
+DISB is developed and maintained by members from [IPADS@SJTU](https://github.com/SJTU-IPADS) and Shanghai AI Laboratory. See [Contributors](CONTRIBUTORS.md).
 
 
 
@@ -260,4 +260,4 @@ Rong Chen: rongchen@sjtu.edu.cn
 
 ## License
 
-REEF is released under the [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0.html).
+DISB is released under the [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0.html).
