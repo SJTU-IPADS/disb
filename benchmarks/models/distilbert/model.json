@@ -1,0 +1,44 @@
+{
+    "tf_model_dir": ".",
+    "onnx_model": "./1/distilbert.onnx",
+    
+    "input_tensor_names_tf": ["input_ids", "attention_mask"],
+    "input_tensor_names_onnx": ["input_ids", "attention_mask"],
+    "input_tensor_types": ["int64", "int64"],
+    "input_tensor_shapes": [["batch_size", "sequence"], ["batch_size", "sequence"]],
+    "input_convention": "vocab_attention",
+    
+    "output_comparable": false,
+    "output_tensor_names_tf": ["last_hidden_state"],
+    "output_tensor_names_onnx": ["last_hidden_state"],
+    "output_tensor_types": ["float32"],
+    "output_tensor_shapes": [["batch_size", "sequence", 768]],
+    "output_convention": "hidden_state",
+    
+    "tensor_shape_variables":
+    {
+        "min":
+        {
+            "batch_size": 1,
+            "sequence": 1
+        },
+        "opt":
+        {
+            "batch_size": 1,
+            "sequence": 32
+        },
+        "max":
+        {
+            "batch_size": 8,
+            "sequence": 64
+        }
+    },
+    
+    "inputs":
+    [
+        [[101, 2770, 4487, 16643, 23373, 6847, 10665, 2006, 4487, 19022, 999, 102],
+         [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]],
+        [[101, 4487, 16643, 23373, 2003, 1037, 2235, 1010, 3435, 1010, 10036, 1998, 2422, 10938, 2121, 2944, 4738, 2011, 4487, 16643, 13112, 14324, 2918, 1012, 102],
+         [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]]
+    ]
+}

@@ -15,7 +15,12 @@ Client::Client():
     name("Unknown"),
     basicAnalyzer(std::make_shared<BasicAnalyzer>())
 {
+    basicAnalyzer->setClient(this);
+}
 
+std::string Client::getName()
+{
+    return name;
 }
 
 void Client::setName(const std::string &_name)
@@ -84,6 +89,11 @@ void Client::stopAnalyzers(const std::chrono::system_clock::time_point &endTime)
     for (auto customAnalyzer : customAnalyzers) {
         customAnalyzer->stop(endTime);
     }
+}
+
+void Client::setStandAloneLatency(std::chrono::nanoseconds standAloneLatency)
+{
+    basicAnalyzer->setStandAloneLatency(standAloneLatency);
 }
 
 } // namespace DISB

@@ -1,0 +1,47 @@
+{
+    "tf_model_dir": ".",
+    "onnx_model": "./1/densenet201-imagenet.onnx",
+    
+    "input_tensor_names_tf": ["input"],
+    "input_tensor_names_onnx": ["input"],
+    "input_tensor_type": ["float32"],
+    "input_tensor_shapes": [["batch_size", 224, 224, 3]],
+    "input_convention": "common_image_input",
+
+    "output_comparable": true,
+    "output_tensor_names_tf": ["output"],
+    "output_tensor_names_onnx": ["output"],
+    "output_tensor_types": ["float32"],
+    "output_tensor_shapes": [["batch_size", 1000]],
+    "output_convention": "softmax",
+
+    "tensor_shape_variables":
+    {
+        "min":
+        {
+            "batch_size": 1
+        },
+        "opt":
+        {
+            "batch_size": 1
+        },
+        "max":
+        {
+            "batch_size": 8
+        }
+    },
+
+    "input_dir": "../../inputs/imagenet",
+    "inputs":
+    [
+        "gorilla.png",
+        "cassette.png",
+        "pizza.png"
+    ],
+    "outputs":
+    [
+        219,
+        481,
+        793
+    ]
+}

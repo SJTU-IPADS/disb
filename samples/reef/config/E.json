@@ -3,7 +3,7 @@
     "tasks":
     [
         {
-            "strategy":
+            "load":
             {
                 "type": "trace",
                 "priority": 0,
@@ -1277,7 +1277,7 @@
             }
         },
         {
-            "strategy":
+            "load":
             {
                 "type": "trace",
                 "priority": 0,
@@ -2551,7 +2551,7 @@
             }
         },
         {
-            "strategy":
+            "load":
             {
                 "type": "trace",
                 "priority": 0,
@@ -3585,7 +3585,7 @@
             }
         },
         {
-            "strategy":
+            "load":
             {
                 "type": "trace",
                 "priority": 0,
@@ -5159,7 +5159,7 @@
             }
         },
         {
-            "strategy":
+            "load":
             {
                 "type": "trace",
                 "priority": 0,
@@ -6313,7 +6313,7 @@
             }
         },     
         {
-            "strategy":
+            "load":
             {
                 "type": "periodic",
                 "priority": 1,
@@ -6326,7 +6326,7 @@
             }
         },
         {
-            "strategy":
+            "load":
             {
                 "type": "periodic",
                 "priority": 1,
@@ -6339,7 +6339,7 @@
             }
         },
         {
-            "strategy":
+            "load":
             {
                 "type": "periodic",
                 "priority": 1,
@@ -6352,7 +6352,7 @@
             }
         },
         {
-            "strategy":
+            "load":
             {
                 "type": "periodic",
                 "priority": 1,
@@ -6365,7 +6365,7 @@
             }
         },
         {
-            "strategy":
+            "load":
             {
                 "type": "periodic",
                 "priority": 1,

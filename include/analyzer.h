@@ -71,11 +71,14 @@ public:
 class BasicAnalyzer: public Analyzer
 {
 private:
+    std::chrono::nanoseconds standAloneLatency;
     std::list<std::shared_ptr<Record>> records;
     std::chrono::system_clock::time_point beginTime;
     std::chrono::system_clock::time_point endTime;
 
 public:
+    void setStandAloneLatency(std::chrono::nanoseconds standAloneLatency);
+
     virtual void start(const std::chrono::system_clock::time_point &beginTime) override;
     virtual void stop(const std::chrono::system_clock::time_point &endTime) override;
     

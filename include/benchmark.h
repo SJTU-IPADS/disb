@@ -2,29 +2,35 @@
 #define _DISB_BENCHMARK_H_
 
 #include "analyzer.h"
-#include "strategy.h"
+#include "load.h"
 #include "client.h"
 
+#include <map>
 #include <vector>
 #include <memory>
 #include <string>
 #include <jsoncpp/json/json.h>
 
-#define LATENCY_MEASURE_TIME 5
-#define DELAY_BEGIN_SECONDS 1
+#define WARMUP_TIME                         100
+#define STANDALONE_LATENCY_MEASURE_TIME     200
+#define DELAY_BEGIN_SECONDS                 5
 
 namespace DISB
 {
 
 struct BenchmarkTask
 {
+    bool isDependent = false;
+    std::string id;
+    std::vector<BenchmarkTask *> nextTasks;
     std::shared_ptr<Client> client;
-    std::shared_ptr<Strategy> strategy;
+    std::shared_ptr<Load> load;
     std::shared_ptr<StandAloneLatency> standAloneLatency;
 
-    BenchmarkTask(std::shared_ptr<Client> clt, std::shared_ptr<Strategy> stg):
-        client(clt), strategy(stg), standAloneLatency(std::make_shared<StandAloneLatency>()) {}
+    BenchmarkTask(): id("UNKNOWN") {}
+    BenchmarkTask(std::string taskId, std::shared_ptr<Client> clt, std::shared_ptr<Load> stg);
     
+    void inferOnce();
     void runBenchmark(const std::chrono::system_clock::time_point &beginTime,
                       const std::chrono::system_clock::time_point &endTime);
 };
@@ -35,7 +41,7 @@ private:
     std::chrono::seconds benchmarkTime;
     std::chrono::system_clock::time_point beginTime;
     std::chrono::system_clock::time_point endTime;
-    std::vector<BenchmarkTask> tasks;
+    std::map<std::string, BenchmarkTask> tasks;
 
 public:
     BenchmarkSuite();
@@ -43,9 +49,13 @@ public:
 
     void init(const std::string &configJsonStr,
               std::shared_ptr<Client> clientFactory(const Json::Value &config),
-              std::shared_ptr<Strategy> strategyFactory(const Json::Value &config) = builtinStrategyFactory);
+              std::shared_ptr<Load> loadFactory(const Json::Value &config) = builtinLoadFactory);
+    
+    void init(const Json::Value &configJson,
+              std::shared_ptr<Client> clientFactory(const Json::Value &config),
+              std::shared_ptr<Load> loadFactory(const Json::Value &config) = builtinLoadFactory);
 
-    void run(void strategyCoordinator(const std::vector<StrategyInfo> &strategyInfos) = builtinStrategyCoordinator);
+    void run(void loadCoordinator(const std::vector<LoadInfo> &loadInfos) = builtinLoadCoordinator);
     Json::Value generateReport();
 };
 

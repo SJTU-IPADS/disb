@@ -1,0 +1,17 @@
+name: "mobilenetv1-imagenet"
+platform: "tensorrt_plan"
+max_batch_size: 8
+input [
+  {
+    name: "input:0"
+    data_type: TYPE_FP32
+    dims: [ 224, 224, 3 ]
+  }
+]
+output [
+  {
+    name: "MobilenetV1/Predictions/Reshape:0"
+    data_type: TYPE_FP32
+    dims: [ 1001 ]
+  }
+]

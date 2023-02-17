@@ -3,7 +3,8 @@
     "tasks":
     [
         {
-            "strategy":
+            "id": "task_d",
+            "load":
             {
                 "type": "periodic",
                 "priority": 0,
@@ -15,7 +16,8 @@
             }
         },
         {
-            "strategy":
+            "id": "task_i",
+            "load":
             {
                 "type": "periodic",
                 "priority": 0,
@@ -27,7 +29,8 @@
             }
         },
         {
-            "strategy":
+            "id": "task_s",
+            "load":
             {
                 "type": "trace",
                 "trace":
@@ -51,7 +54,8 @@
             }
         },
         {
-            "strategy":
+            "id": "task_b",
+            "load":
             {
                 "type": "periodic",
                 "priority": 1,
@@ -60,6 +64,32 @@
             "client":
             {
                 "name": "my_name_is_B"
+            }
+        },
+        {
+            "id": "task_e",
+            "load":
+            {
+                "type": "dependent",
+                "prev_task_ids":
+                [
+                    "task_d"
+                ]
+            },
+            "client":
+            {
+                "name": "my_name_is_E"
+            }
+        },
+        {
+            "id": "task_f",
+            "load":
+            {
+                "type": "continuous"
+            },
+            "client":
+            {
+                "name": "my_name_is_F"
             }
         }
     ]

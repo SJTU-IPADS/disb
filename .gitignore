@@ -1,3 +1,8 @@
+logs
 build
+install
 .vscode
-.DS_store
+
+*.plan
+*.DS_store
+*.tar.gz

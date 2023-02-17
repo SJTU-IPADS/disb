@@ -1,0 +1,5 @@
+*.pb filter=lfs diff=lfs merge=lfs -text
+*.index filter=lfs diff=lfs merge=lfs -text
+*.data-00000-of-00001 filter=lfs diff=lfs merge=lfs -text
+*.onnx filter=lfs diff=lfs merge=lfs -text
+benchmarks/inputs/imagenet/* filter=lfs diff=lfs merge=lfs -text

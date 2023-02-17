@@ -3,7 +3,7 @@
     "tasks":
     [
         {
-            "strategy":
+            "load":
             {
                 "type": "periodic",
                 "priority": 0,
@@ -16,7 +16,7 @@
             }
         },       
         {
-            "strategy":
+            "load":
             {
                 "type": "periodic",
                 "priority": 1,

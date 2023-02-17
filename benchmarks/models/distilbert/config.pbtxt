@@ -1,0 +1,22 @@
+name: "distilbert"
+platform: "tensorrt_plan"
+max_batch_size: 8
+input [
+  {
+    name: "input_ids"
+    data_type: TYPE_INT32
+    dims: [ -1 ]
+  },
+  {
+    name: "attention_mask"
+    data_type: TYPE_INT32
+    dims: [ -1 ]
+  }
+]
+output [
+  {
+    name: "last_hidden_state"
+    data_type: TYPE_FP32
+    dims: [ -1, 768 ]
+  }
+]

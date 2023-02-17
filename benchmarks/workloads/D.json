@@ -1,0 +1,169 @@
+{
+    "time": 60,
+    "tasks":
+    [
+        {
+            "id": "resnet152_rt",
+            "load":
+            {
+                "type": "periodic",
+                "priority": 0,
+                "frequency": 20
+            },
+            "client":
+            {
+                "name": "resnet152_rt",
+                "model_name": "resnet152-imagenet",
+                "batch_size": 1,
+                "tfs_grpc_addr": "localhost:8500",
+                "triton_grpc_addr": "localhost:8001"
+            }
+        },
+        {
+            "id": "densenet201_rt",
+            "load":
+            {
+                "type": "periodic",
+                "priority": 0,
+                "frequency": 20
+            },
+            "client":
+            {
+                "name": "densenet201_rt",
+                "model_name": "densenet201-imagenet",
+                "batch_size": 1,
+                "tfs_grpc_addr": "localhost:8500",
+                "triton_grpc_addr": "localhost:8001"
+            }
+        },
+        {
+            "id": "vgg19_rt",
+            "load":
+            {
+                "type": "periodic",
+                "priority": 0,
+                "frequency": 20
+            },
+            "client":
+            {
+                "name": "vgg19_rt",
+                "model_name": "vgg19-imagenet",
+                "batch_size": 1,
+                "tfs_grpc_addr": "localhost:8500",
+                "triton_grpc_addr": "localhost:8001"
+            }
+        },
+        {
+            "id": "inceptionv3_rt",
+            "load":
+            {
+                "type": "periodic",
+                "priority": 0,
+                "frequency": 20
+            },
+            "client":
+            {
+                "name": "inceptionv3_rt",
+                "model_name": "inceptionv3-imagenet",
+                "batch_size": 1,
+                "tfs_grpc_addr": "localhost:8500",
+                "triton_grpc_addr": "localhost:8001"
+            }
+        },
+        {
+            "id": "distilbert_rt",
+            "load":
+            {
+                "type": "periodic",
+                "priority": 0,
+                "frequency": 20
+            },
+            "client":
+            {
+                "name": "distilbert_rt",
+                "model_name": "distilbert",
+                "batch_size": 1,
+                "tfs_grpc_addr": "localhost:8500",
+                "triton_grpc_addr": "localhost:8001"
+            }
+        },
+
+
+
+        {
+            "id": "resnet152_be",
+            "load":
+            {
+                "type": "continuous"
+            },
+            "client":
+            {
+                "name": "resnet152_be",
+                "model_name": "resnet152-imagenet",
+                "batch_size": 1,
+                "tfs_grpc_addr": "localhost:8500",
+                "triton_grpc_addr": "localhost:8001"
+            }
+        },
+        {
+            "id": "densenet201_be",
+            "load":
+            {
+                "type": "continuous"
+            },
+            "client":
+            {
+                "name": "densenet201_be",
+                "model_name": "densenet201-imagenet",
+                "batch_size": 1,
+                "tfs_grpc_addr": "localhost:8500",
+                "triton_grpc_addr": "localhost:8001"
+            }
+        },
+        {
+            "id": "vgg19_be",
+            "load":
+            {
+                "type": "continuous"
+            },
+            "client":
+            {
+                "name": "vgg19_be",
+                "model_name": "vgg19-imagenet",
+                "batch_size": 1,
+                "tfs_grpc_addr": "localhost:8500",
+                "triton_grpc_addr": "localhost:8001"
+            }
+        },
+        {
+            "id": "inceptionv3_be",
+            "load":
+            {
+                "type": "continuous"
+            },
+            "client":
+            {
+                "name": "inceptionv3_be",
+                "model_name": "inceptionv3-imagenet",
+                "batch_size": 1,
+                "tfs_grpc_addr": "localhost:8500",
+                "triton_grpc_addr": "localhost:8001"
+            }
+        },
+        {
+            "id": "distilbert_be",
+            "load":
+            {
+                "type": "continuous"
+            },
+            "client":
+            {
+                "name": "distilbert_be",
+                "model_name": "distilbert",
+                "batch_size": 1,
+                "tfs_grpc_addr": "localhost:8500",
+                "triton_grpc_addr": "localhost:8001"
+            }
+        }
+    ]
+}

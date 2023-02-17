@@ -14,7 +14,7 @@ see https://github.com/SJTU-IPADS/reef/blob/main/INSTALL.md
 ```bash
 # in disb
 
-$ cmake -DSAMPLE_REEF=ON -B build
+$ cmake -DBUILD_REEF=ON -B build
 $ cd build
 $ make -j$(nproc)
 ```

@@ -1,0 +1,41 @@
+{
+    "time": 60,
+    "tasks":
+    [
+        {
+            "id": "vgg19_rt",
+            "load":
+            {
+                "type": "periodic",
+                "priority": 0,
+                "frequency": 100
+            },
+            "client":
+            {
+                "name": "vgg19_rt",
+                "model_name": "vgg19-imagenet",
+                "batch_size": 1,
+                "tfs_grpc_addr": "localhost:8500",
+                "triton_grpc_addr": "localhost:8001"
+            }
+        },
+
+
+
+        {
+            "id": "resnet152_be",
+            "load":
+            {
+                "type": "continuous"
+            },
+            "client":
+            {
+                "name": "resnet152_be",
+                "model_name": "resnet152-imagenet",
+                "batch_size": 1,
+                "tfs_grpc_addr": "localhost:8500",
+                "triton_grpc_addr": "localhost:8001"
+            }
+        }
+    ]
+}

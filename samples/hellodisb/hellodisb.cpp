@@ -7,7 +7,7 @@
 #include <iostream>
 #include <jsoncpp/json/json.h>
 
-class HelloClient: public DISB::Client
+class HelloClient: public DISB::DependentClient
 {
 public:
     HelloClient(const std::string &name)

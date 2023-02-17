@@ -1,0 +1,238 @@
+{
+	"beginTime" : "2023-02-15 04:30:40",
+	"benchmarkTime(s)" : 60,
+	"endTime" : "2023-02-15 04:31:40",
+	"results" : 
+	[
+		{
+			"analyzers" : 
+			[
+				{
+					"avgCopyInputLatency(us)" : 122,
+					"avgCopyOutputLatency(us)" : 94,
+					"avgInferLatency(us)" : 68496,
+					"avgPostprocessLatency(us)" : 3,
+					"avgPrepareInputLatency(us)" : 0,
+					"avgPreprocessLatency(us)" : 88,
+					"avgThroughput(req/s)" : 14.533333333333333,
+					"avgTotalLatency(us)" : 68806,
+					"avgTotalLatencyIncrease(us)" : 61322,
+					"standAloneTotalLatency(us)" : 7483,
+					"type" : "basic"
+				},
+				{
+					"accuarcy" : 1,
+					"type" : "accuarcy"
+				}
+			],
+			"clientName" : "densenet201_be"
+		},
+		{
+			"analyzers" : 
+			[
+				{
+					"avgCopyInputLatency(us)" : 130,
+					"avgCopyOutputLatency(us)" : 85,
+					"avgInferLatency(us)" : 68528,
+					"avgPostprocessLatency(us)" : 3,
+					"avgPrepareInputLatency(us)" : 0,
+					"avgPreprocessLatency(us)" : 64,
+					"avgThroughput(req/s)" : 14.533333333333333,
+					"avgTotalLatency(us)" : 68811,
+					"avgTotalLatencyIncrease(us)" : 61322,
+					"standAloneTotalLatency(us)" : 7489,
+					"type" : "basic"
+				},
+				{
+					"accuarcy" : 1,
+					"type" : "accuarcy"
+				}
+			],
+			"clientName" : "densenet201_rt"
+		},
+		{
+			"analyzers" : 
+			[
+				{
+					"avgCopyInputLatency(us)" : 36,
+					"avgCopyOutputLatency(us)" : 28,
+					"avgInferLatency(us)" : 6610,
+					"avgPostprocessLatency(us)" : 0,
+					"avgPrepareInputLatency(us)" : 0,
+					"avgPreprocessLatency(us)" : 0,
+					"avgThroughput(req/s)" : 149.71666666666667,
+					"avgTotalLatency(us)" : 6677,
+					"avgTotalLatencyIncrease(us)" : 5498,
+					"standAloneTotalLatency(us)" : 1178,
+					"type" : "basic"
+				},
+				{
+					"accuarcy" : 1,
+					"type" : "accuarcy"
+				}
+			],
+			"clientName" : "distilbert_be"
+		},
+		{
+			"analyzers" : 
+			[
+				{
+					"avgCopyInputLatency(us)" : 30,
+					"avgCopyOutputLatency(us)" : 37,
+					"avgInferLatency(us)" : 7850,
+					"avgPostprocessLatency(us)" : 0,
+					"avgPrepareInputLatency(us)" : 0,
+					"avgPreprocessLatency(us)" : 1,
+					"avgThroughput(req/s)" : 20,
+					"avgTotalLatency(us)" : 7920,
+					"avgTotalLatencyIncrease(us)" : 6729,
+					"standAloneTotalLatency(us)" : 1190,
+					"type" : "basic"
+				},
+				{
+					"accuarcy" : 1,
+					"type" : "accuarcy"
+				}
+			],
+			"clientName" : "distilbert_rt"
+		},
+		{
+			"analyzers" : 
+			[
+				{
+					"avgCopyInputLatency(us)" : 120,
+					"avgCopyOutputLatency(us)" : 44,
+					"avgInferLatency(us)" : 20082,
+					"avgPostprocessLatency(us)" : 3,
+					"avgPrepareInputLatency(us)" : 0,
+					"avgPreprocessLatency(us)" : 59,
+					"avgThroughput(req/s)" : 49.233333333333334,
+					"avgTotalLatency(us)" : 20310,
+					"avgTotalLatencyIncrease(us)" : 17360,
+					"standAloneTotalLatency(us)" : 2949,
+					"type" : "basic"
+				},
+				{
+					"accuarcy" : 1,
+					"type" : "accuarcy"
+				}
+			],
+			"clientName" : "inceptionv3_be"
+		},
+		{
+			"analyzers" : 
+			[
+				{
+					"avgCopyInputLatency(us)" : 133,
+					"avgCopyOutputLatency(us)" : 32,
+					"avgInferLatency(us)" : 28852,
+					"avgPostprocessLatency(us)" : 2,
+					"avgPrepareInputLatency(us)" : 0,
+					"avgPreprocessLatency(us)" : 64,
+					"avgThroughput(req/s)" : 20,
+					"avgTotalLatency(us)" : 29085,
+					"avgTotalLatencyIncrease(us)" : 26164,
+					"standAloneTotalLatency(us)" : 2921,
+					"type" : "basic"
+				},
+				{
+					"accuarcy" : 1,
+					"type" : "accuarcy"
+				}
+			],
+			"clientName" : "inceptionv3_rt"
+		},
+		{
+			"analyzers" : 
+			[
+				{
+					"avgCopyInputLatency(us)" : 117,
+					"avgCopyOutputLatency(us)" : 47,
+					"avgInferLatency(us)" : 22549,
+					"avgPostprocessLatency(us)" : 2,
+					"avgPrepareInputLatency(us)" : 0,
+					"avgPreprocessLatency(us)" : 60,
+					"avgThroughput(req/s)" : 43.899999999999999,
+					"avgTotalLatency(us)" : 22777,
+					"avgTotalLatencyIncrease(us)" : 18580,
+					"standAloneTotalLatency(us)" : 4197,
+					"type" : "basic"
+				},
+				{
+					"accuarcy" : 1,
+					"type" : "accuarcy"
+				}
+			],
+			"clientName" : "resnet152_be"
+		},
+		{
+			"analyzers" : 
+			[
+				{
+					"avgCopyInputLatency(us)" : 124,
+					"avgCopyOutputLatency(us)" : 38,
+					"avgInferLatency(us)" : 25885,
+					"avgPostprocessLatency(us)" : 3,
+					"avgPrepareInputLatency(us)" : 8,
+					"avgPreprocessLatency(us)" : 72,
+					"avgThroughput(req/s)" : 20,
+					"avgTotalLatency(us)" : 26132,
+					"avgTotalLatencyIncrease(us)" : 21940,
+					"standAloneTotalLatency(us)" : 4192,
+					"type" : "basic"
+				},
+				{
+					"accuarcy" : 1,
+					"type" : "accuarcy"
+				}
+			],
+			"clientName" : "resnet152_rt"
+		},
+		{
+			"analyzers" : 
+			[
+				{
+					"avgCopyInputLatency(us)" : 109,
+					"avgCopyOutputLatency(us)" : 29,
+					"avgInferLatency(us)" : 3883,
+					"avgPostprocessLatency(us)" : 2,
+					"avgPrepareInputLatency(us)" : 0,
+					"avgPreprocessLatency(us)" : 37,
+					"avgThroughput(req/s)" : 246.01666666666668,
+					"avgTotalLatency(us)" : 4063,
+					"avgTotalLatencyIncrease(us)" : 1268,
+					"standAloneTotalLatency(us)" : 2794,
+					"type" : "basic"
+				},
+				{
+					"accuarcy" : 1,
+					"type" : "accuarcy"
+				}
+			],
+			"clientName" : "vgg19_be"
+		},
+		{
+			"analyzers" : 
+			[
+				{
+					"avgCopyInputLatency(us)" : 163,
+					"avgCopyOutputLatency(us)" : 62,
+					"avgInferLatency(us)" : 6290,
+					"avgPostprocessLatency(us)" : 2,
+					"avgPrepareInputLatency(us)" : 0,
+					"avgPreprocessLatency(us)" : 66,
+					"avgThroughput(req/s)" : 20,
+					"avgTotalLatency(us)" : 6585,
+					"avgTotalLatencyIncrease(us)" : 3799,
+					"standAloneTotalLatency(us)" : 2786,
+					"type" : "basic"
+				},
+				{
+					"accuarcy" : 1,
+					"type" : "accuarcy"
+				}
+			],
+			"clientName" : "vgg19_rt"
+		}
+	]
+}

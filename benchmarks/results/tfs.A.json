@@ -1,0 +1,54 @@
+{
+	"beginTime" : "2023-02-15 13:02:07",
+	"benchmarkTime(s)" : 60,
+	"endTime" : "2023-02-15 13:03:07",
+	"results" : 
+	[
+		{
+			"analyzers" : 
+			[
+				{
+					"avgCopyInputLatency(us)" : 0,
+					"avgCopyOutputLatency(us)" : 0,
+					"avgInferLatency(us)" : 28040,
+					"avgPostprocessLatency(us)" : 4,
+					"avgPrepareInputLatency(us)" : 36,
+					"avgPreprocessLatency(us)" : 1844,
+					"avgThroughput(req/s)" : 33.416666666666664,
+					"avgTotalLatency(us)" : 29926,
+					"avgTotalLatencyIncrease(us)" : 9989,
+					"standAloneTotalLatency(us)" : 19937,
+					"type" : "basic"
+				},
+				{
+					"accuarcy" : 1,
+					"type" : "accuarcy"
+				}
+			],
+			"clientName" : "resnet152_be"
+		},
+		{
+			"analyzers" : 
+			[
+				{
+					"avgCopyInputLatency(us)" : 0,
+					"avgCopyOutputLatency(us)" : 0,
+					"avgInferLatency(us)" : 7992,
+					"avgPostprocessLatency(us)" : 4,
+					"avgPrepareInputLatency(us)" : 47,
+					"avgPreprocessLatency(us)" : 2052,
+					"avgThroughput(req/s)" : 98.533333333333331,
+					"avgTotalLatency(us)" : 10098,
+					"avgTotalLatencyIncrease(us)" : 1553,
+					"standAloneTotalLatency(us)" : 8544,
+					"type" : "basic"
+				},
+				{
+					"accuarcy" : 1,
+					"type" : "accuarcy"
+				}
+			],
+			"clientName" : "vgg19_rt"
+		}
+	]
+}
